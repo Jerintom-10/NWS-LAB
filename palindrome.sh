@@ -1,15 +1,12 @@
-#!bin/bash
-palind()
-{
-echo "Enter a string"
-read a
-reverse=$(echo "$a" |rev )
-echo $reverse
-if [ "$a" = "$reverse" ]
-then
-echo "$a is palindrome"
-else 
-echo "$a is not a palindrome"
+#!/bin/bash
+# Prompt the user for the string to check
+echo "Enter a string: "
+read string
+# Reverse the string
+reverse=$(echo $string | rev)
+# Check if the string is equal to its reverse
+if [ "$string" == "$reverse" ]; then
+echo "$string is a palindrome."
+else
+echo "$string is not a palindrome."
 fi
-}
-palind
