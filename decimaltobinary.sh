@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "Enter a decimal number: "
 read decimal
-# Convert the decimal number to binary
 binary=""
 while [ $decimal -gt 0 ]; do
 remainder=$((decimal % 2))
