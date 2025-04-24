@@ -1,7 +1,6 @@
 #!/bin/bash
 my_list=("jerin" "ameen" "athul" "seena")
 my_list=($(echo "${my_list[@]}" | tr ' ' '\n' | tac | tr '\n' ' '))
-# Reverse each string in the list
 for i in "${!my_list[@]}"
 do
 my_list[$i]=`echo ${my_list[$i]} | rev`
