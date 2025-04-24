@@ -8,5 +8,4 @@ remainder=$((decimal % 2))
 binary="$remainder$binary"
 decimal=$((decimal / 2))
 done
-# Print the binary number
 echo "The binary equivalent is: $binary"
