@@ -1,5 +1,4 @@
 #!/bin/bash
-# Prompt the user for the decimal number to convert
 echo "Enter a decimal number: "
 read decimal
 # Convert the decimal number to binary
